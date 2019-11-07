@@ -17,6 +17,9 @@ project "Nugget"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 	
+	pchheader "nepch.h"
+	pchsource "Nugget/src/nepch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",
@@ -25,6 +28,7 @@ project "Nugget"
 
 	includedirs
 	{
+		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include"
 	}
 

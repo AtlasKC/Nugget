@@ -4,6 +4,9 @@
     <Filter Include="Nugget">
       <UniqueIdentifier>{6FD750C6-5B79-7B9C-4434-8FF0307502ED}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Nugget\Events">
+      <UniqueIdentifier>{73F01912-DFB0-9548-A8EB-DEC5146BDA24}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Nugget.h" />
@@ -16,9 +19,22 @@
     <ClInclude Include="src\Nugget\EntryPoint.h">
       <Filter>Nugget</Filter>
     </ClInclude>
+    <ClInclude Include="src\Nugget\Events\ApplicationEvent.h">
+      <Filter>Nugget\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nugget\Events\Event.h">
+      <Filter>Nugget\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nugget\Events\KeyEvent.h">
+      <Filter>Nugget\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nugget\Events\MouseEvent.h">
+      <Filter>Nugget\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\Nugget\Log.h">
       <Filter>Nugget</Filter>
     </ClInclude>
+    <ClInclude Include="src\nepch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Nugget\Application.cpp">
@@ -27,5 +43,6 @@
     <ClCompile Include="src\Nugget\Log.cpp">
       <Filter>Nugget</Filter>
     </ClCompile>
+    <ClCompile Include="src\nepch.cpp" />
   </ItemGroup>
 </Project>

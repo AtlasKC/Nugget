@@ -3,6 +3,7 @@
 
 #include "Nugget/Events/ApplicationEvent.h"
 #include "Nugget/Log.h"
+#include <GLFW/glfw3.h>
 
 namespace Nugget
 {
@@ -16,7 +17,7 @@ namespace Nugget
 		
 	}
 
-	void Application::run()
+	void Application::Run()
 	{
 		while(m_Running)
 		{

@@ -52,7 +52,8 @@ project "Nugget"
 		defines
 		{
 			"NE_PLATFORM_WINDOWS",
-			"NE_BUILD_DLL"
+			"NE_BUILD_DLL",
+			"NE_ENABLE_ASSERTS"
 		}
 		
 		postbuildcommands

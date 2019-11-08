@@ -1,7 +1,7 @@
 #pragma once
 
 #include "nepch.h"
-#include "../Core.h"
+#include "Nugget/Core.h"
 
 namespace Nugget
 {

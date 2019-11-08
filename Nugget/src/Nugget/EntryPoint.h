@@ -10,7 +10,7 @@ int main(int argc, char** argv)
 	NE_CORE_INFO("Core initialized...");
 	NE_INFO("App initialized...");
 	auto app = Nugget::CreateApplication();
-	app->run();
+	app->Run();
 	delete app;
 }
 

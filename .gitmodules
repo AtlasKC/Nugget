@@ -1,3 +1,6 @@
 [submodule "Nugget/vendor/spdlog"]
 	path = Nugget/vendor/spdlog
 	url = https://github.com/gabime/spdlog.git
+[submodule "Nugget/vendor/glfw"]
+	path = Nugget/vendor/glfw
+	url = https://github.com/TheCherno/glfw

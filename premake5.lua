@@ -10,6 +10,11 @@ workspace "Nugget"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+IncludeDir = {}
+IncludeDir["glfw"] = "Nugget/vendor/glfw/include"
+
+include "Nugget/vendor/glfw"
+
 project "Nugget"
 	location "Nugget"
 	kind "SharedLib"
@@ -29,7 +34,14 @@ project "Nugget"
 	includedirs
 	{
 		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.glfw}"
+	}
+
+	links
+	{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"

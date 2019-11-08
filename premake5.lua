@@ -52,8 +52,7 @@ project "Nugget"
 		defines
 		{
 			"NE_PLATFORM_WINDOWS",
-			"NE_BUILD_DLL",
-			"NE_ENABLE_ASSERTS"
+			"NE_BUILD_DLL"
 		}
 		
 		postbuildcommands
@@ -63,14 +62,17 @@ project "Nugget"
 
 	filter "configurations:Debug"
 		defines "NE_DEBUG"
+		buildoptions "/MDd"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "NE_RELEASE"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "NE_DIST"
+		buildoptions "/MD"
 		optimize "On"
 
 project "Sandbox"
@@ -109,12 +111,15 @@ project "Sandbox"
 		
 	filter "configurations:Debug"
 		defines "NE_DEBUG"
+		buildoptions "/MDd"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "NE_RELEASE"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "NE_DIST"
+		buildoptions "/MD"
 		optimize "On"

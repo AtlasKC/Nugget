@@ -149,6 +149,8 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Nugget\LayerStack.h" />
+    <ClInclude Include="src\Nugget\Layer.h" />
     <ClInclude Include="src\Nugget.h" />
     <ClInclude Include="src\Nugget\Application.h" />
     <ClInclude Include="src\Nugget\Core.h" />
@@ -163,6 +165,8 @@
     <ClInclude Include="src\nepch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Nugget\LayerStack.cpp" />
+    <ClCompile Include="src\Nugget\Layer.cpp" />
     <ClCompile Include="src\Nugget\Application.cpp" />
     <ClCompile Include="src\Nugget\Log.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
